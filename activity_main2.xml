@@ -4,19 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main2Activity">
+    tools:context=".Main2Activity"
+    android:background="#00CC99">
 
     <TextView
         android:id="@+id/tekstopcje"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Wybierz akcent"
+        android:text="Wybierz środek treningowy"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintVertical_bias="0.02"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
 
     <Button
         android:id="@+id/wo1"
@@ -31,16 +34,16 @@
         app:layout_constraintVertical_bias="0.105"/>
 
     <Button
-    android:id="@+id/wo2"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:text="Wytrzymałość ogólna - OWB2"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.165"/>
+        android:id="@+id/wo2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Wytrzymałość ogólna - OWB2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185"/>
 
     <Button
         android:id="@+id/wo3"
@@ -52,6 +55,103 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.225"/>
+        app:layout_constraintVertical_bias="0.265"/>
+
+    <Button
+        android:id="@+id/wsz"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Wytrzymałość szybkościowa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.425"/>
+
+
+    <Button
+        android:id="@+id/wt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Wytrzymałość tempowa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345"/>
+
+    <Button
+        android:id="@+id/zb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Zabawa biegowa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.505"/>
+
+    <Button
+        android:id="@+id/szybkosc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Szybkość"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585"/>
+
+    <Button
+        android:id="@+id/st"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Szybkość techniczna"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665"/>
+
+    <Button
+        android:id="@+id/sb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Siła biegowa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745"/>
+
+    <Button
+        android:id="@+id/sila"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Siła specjalna"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.825"/>
+
+    <Button
+        android:id="@+id/spa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sprawność"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.905"/>
 
 </android.support.constraint.ConstraintLayout>
