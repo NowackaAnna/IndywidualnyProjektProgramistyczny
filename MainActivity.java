@@ -8,14 +8,17 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    public DatabaseHelper myDb;
     private Button button;
     private Button button2;
     private Button button3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener(){
@@ -38,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 openPodsumowanie();
             }
         });
+        myDb = new DatabaseHelper(this);
     }
     public void openMain2Activity() {
         Intent intent = new Intent(this, Main2Activity.class);
