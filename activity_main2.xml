@@ -23,33 +23,42 @@
 
     <Button
         android:id="@+id/wo1"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Wytrzymałość ogólna - OWB1"
+        android:textColor="#000000"
+        android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.105"/>
+        app:layout_constraintVertical_bias="0.105" />
 
     <Button
         android:id="@+id/wo2"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Wytrzymałość ogólna - OWB2"
+        android:textColor="#000000"
+        android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185"/>
+        app:layout_constraintVertical_bias="0.185" />
 
     <Button
         android:id="@+id/wo3"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Wytrzymałość ogólna - OWB3"
+        android:textColor="#000000"
+        android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -59,9 +68,12 @@
 
     <Button
         android:id="@+id/wsz"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Wytrzymałość szybkościowa"
+        android:textColor="#000000"
+        android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -72,9 +84,12 @@
 
     <Button
         android:id="@+id/wt"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Wytrzymałość tempowa"
+        android:textColor="#000000"
+        android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -84,9 +99,12 @@
 
     <Button
         android:id="@+id/zb"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Zabawa biegowa"
+        android:textColor="#000000"
+        android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -96,9 +114,12 @@
 
     <Button
         android:id="@+id/szybkosc"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Szybkość"
+        android:textColor="#000000"
+        android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -108,9 +129,12 @@
 
     <Button
         android:id="@+id/st"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Szybkość techniczna"
+        android:textColor="#000000"
+        android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -120,9 +144,12 @@
 
     <Button
         android:id="@+id/sb"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Siła biegowa"
+        android:textColor="#000000"
+        android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -132,9 +159,12 @@
 
     <Button
         android:id="@+id/sila"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Siła specjalna"
+        android:textColor="#000000"
+        android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -144,9 +174,12 @@
 
     <Button
         android:id="@+id/spa"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Sprawność"
+        android:textColor="#000000"
+        android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
