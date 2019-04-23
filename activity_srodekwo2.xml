@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Srodekwo1"
+    tools:context="Srodekwo2"
     android:background="#00CC99">
 
 
     <TextView
-        android:id="@+id/textdata"
+        android:id="@+id/textdata2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Data (YYYY-MM-DD)"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.01" />
 
     <EditText
-        android:id="@+id/editData"
+        android:id="@+id/editData2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -40,7 +40,7 @@
 
 
     <TextView
-        android:id="@+id/textkm"
+        android:id="@+id/textkm2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Kilometry"
@@ -54,7 +54,7 @@
         app:layout_constraintVertical_bias="0.15"/>
 
     <EditText
-        android:id="@+id/editKilometry"
+        android:id="@+id/editKilometry2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -68,7 +68,7 @@
         app:layout_constraintVertical_bias="0.20" />
 
     <TextView
-        android:id="@+id/textczastrwania"
+        android:id="@+id/textczastrwania2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Czas trwania (min)"
@@ -82,7 +82,7 @@
         app:layout_constraintVertical_bias="0.29" />
 
     <EditText
-        android:id="@+id/editCzasTrwania"
+        android:id="@+id/editCzasTrwania2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -98,7 +98,7 @@
 
 
     <TextView
-        android:id="@+id/texttresc"
+        android:id="@+id/texttresc2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Treść treningu"
@@ -112,7 +112,7 @@
         app:layout_constraintVertical_bias="0.43" />
 
     <EditText
-        android:id="@+id/editTresc"
+        android:id="@+id/editTresc2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -126,7 +126,7 @@
         app:layout_constraintVertical_bias="0.48" />
 
     <Button
-        android:id="@+id/Dodaj"
+        android:id="@+id/Dodaj2"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
