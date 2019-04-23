@@ -8,6 +8,8 @@ import android.widget.Button;
 
 public class Main2Activity extends AppCompatActivity {
     private Button wo1;
+    private Button wo2;
+    private Button wo3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,22 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
+        Button wo2 = (Button) findViewById(R.id.wo2);
+        wo2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                openSrodekwo2();
+            }
+        });
+
+        Button wo3 = (Button) findViewById(R.id.wo3);
+        wo3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                openSrodekwo3();
+            }
+        });
+
 
     }
 
@@ -30,6 +48,18 @@ public class Main2Activity extends AppCompatActivity {
     public void openSrodekwo1() {
         Intent intent = new Intent(this, Srodekwo1.class);
         startActivity(intent);
+    }
+
+    public void openSrodekwo2() {
+        Intent intent = new Intent(this, Srodekwo2.class);
+        startActivity(intent);
+
+    }
+
+    public void openSrodekwo3() {
+        Intent intent = new Intent(this, Srodekwo3.class);
+        startActivity(intent);
+
     }
 
 
