@@ -5,7 +5,7 @@ Projekt będzie w formie aplikacji na telefon (Android), jako tzw. dziennik tren
 - wgląd do podsumowania (miesięcznego lub tygodniowego) albo sprawdzenie treningu z danego dnia
 - wejście w opcje sprawdziany (gdzie będzie mógł dodać nowy rezultat, bądź sprawdzić poprzednie)
 
-** Wybranie opcji 'dodanie nowego treningu' będzie skutkowało wyświetleniem ok. 20 akcentów, gdzie po wybraniu odpowiedniego i uzupełnienieniu pól, które się wyświetlą (takich, jak ilość km, czas, ilość powtórzeń itd.) i zatwierdzeniu przyciskiem, zostanie on dodany do danego treninigu.
+** Wybranie opcji 'dodanie nowego treningu' będzie skutkowało wyświetleniem ok. 10 akcentów, gdzie po wybraniu odpowiedniego i uzupełnienieniu pól, które się wyświetlą (takich, jak ilość km, czas, ilość powtórzeń itd.) i zatwierdzeniu przyciskiem, zostanie on dodany do danego treninigu.
 
 ** 'Wgląd do podsumowania' wyświetli podgląd na to, jak w obecnej chwili wygląda podsumowanie z danego miesiąca i tygodnia.
 
