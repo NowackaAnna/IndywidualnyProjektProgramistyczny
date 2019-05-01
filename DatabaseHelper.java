@@ -3,10 +3,13 @@ package com.example.aplikacja;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import java.text.DecimalFormat;
+import java.util.LinkedList;
+import java.util.List;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "Trening2.db";
@@ -62,5 +65,61 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor kursor = db.query("Trening",kolumny,null,null,null,null,null);
         return kursor;
     }
+
+    public Rekord pokazWybrane(String DATE){
+        Rekord rekord = new Rekord();
+        SQLiteDatabase db = getReadableDatabase();
+        String[] kolumny = {"id","SRODEK_TRENINGOWY","KILOMETRY","METRY","POWTORZENIA","KILOGRAMY","CZAS_MINUTY","TRESC_TRENINGU","DODATKOWE_INFORMACJE","DATE"};
+        String args[] = {DATE+""};
+        Cursor kursor = db.query("Trening",kolumny," DATE=?",args,null,null,null, null);
+        if(kursor != null){
+            while (kursor.moveToNext()){
+                rekord.setNr(kursor.getLong(0));
+                rekord.setSrodek(kursor.getString(1));
+                rekord.setKilometry(kursor.getString(2));
+                rekord.setMetry(kursor.getString(3));
+                rekord.setPowtorzenia(kursor.getString(4));
+                rekord.setKilogramy(kursor.getString(5));
+                rekord.setCzas(kursor.getString(6));
+                rekord.setTresc(kursor.getString(7));
+                rekord.setData(kursor.getString(9));}
+
+        }
+        return rekord;
+    }
+
+    public List<Rekord> pokazWybrane2(String DATE){
+        List<Rekord> wybrane = new LinkedList<Rekord>();
+        SQLiteDatabase db = getReadableDatabase();
+        String[] kolumny = {"id","SRODEK_TRENINGOWY","KILOMETRY","METRY","POWTORZENIA","KILOGRAMY","CZAS_MINUTY","TRESC_TRENINGU","DODATKOWE_INFORMACJE","DATE"};
+        String args[] = {DATE+""};
+        Cursor kursor = db.query("Trening",kolumny," DATE=?",args,null,null,null, null);
+        if(kursor != null){
+            while (kursor.moveToNext()){
+                Rekord rekord = new Rekord();
+                rekord.setNr(kursor.getLong(0));
+                rekord.setSrodek(kursor.getString(1));
+                rekord.setKilometry(kursor.getString(2));
+                rekord.setMetry(kursor.getString(3));
+                rekord.setPowtorzenia(kursor.getString(4));
+                rekord.setKilogramy(kursor.getString(5));
+                rekord.setCzas(kursor.getString(6));
+                rekord.setTresc(kursor.getString(7));
+                rekord.setData(kursor.getString(9));
+                wybrane.add(rekord);}
+
+        }
+        return wybrane;
+    }
+
+    public void usunTrening(String DATE){
+        SQLiteDatabase db = getWritableDatabase();
+        String[] argumenty = {""+DATE};
+        db.delete("Trening", "DATE=?",argumenty);
+    }
+
+
+
+
 
 }
