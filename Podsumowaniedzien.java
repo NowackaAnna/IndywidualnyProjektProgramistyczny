@@ -54,7 +54,6 @@ public class Podsumowaniedzien extends AppCompatActivity {
         TextView textpokaz = (TextView) findViewById(R.id.textpokaz);
         textpokaz.setText("");
         textpokaz.setMovementMethod(new ScrollingMovementMethod());
-        String aloha = "143";
         for (Rekord k:myDb.pokazWybrane2(sprawdz)){
             textpokaz.setText(textpokaz.getText() + "\nNazwa środka: " + k.getSrodek()+ "\n* Kilometry: "+k.getKilometry()+"\n* Metry: "+k.getMetry()+"\n* Powtórzenia: "+k.getPowtorzenia()+"\n* Kilogramy: "+k.getKilogramy()+"\n* Czas(min): "+k.getCzas()+"\n* Treść: "+k.getTresc()+"\n");
 

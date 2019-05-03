@@ -118,6 +118,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.delete("Trening", "DATE=?",argumenty);
     }
 
+    public List<Rekord> pokazWybranepoAkcencie(String AKCENT){
+        List<Rekord> wybrane2 = new LinkedList<Rekord>();
+        SQLiteDatabase db = getReadableDatabase();
+        String[] kolumny = {"id","SRODEK_TRENINGOWY","KILOMETRY","METRY","POWTORZENIA","KILOGRAMY","CZAS_MINUTY","TRESC_TRENINGU","DODATKOWE_INFORMACJE","DATE"};
+        String args[] = {AKCENT+""};
+        Cursor kursor = db.query("Trening",kolumny," SRODEK_TRENINGOWY=?",args,null,null,null, null);
+        if(kursor != null){
+            while (kursor.moveToNext()){
+                Rekord rekord = new Rekord();
+                rekord.setNr(kursor.getLong(0));
+                rekord.setSrodek(kursor.getString(1));
+                rekord.setKilometry(kursor.getString(2));
+                rekord.setMetry(kursor.getString(3));
+                rekord.setPowtorzenia(kursor.getString(4));
+                rekord.setKilogramy(kursor.getString(5));
+                rekord.setCzas(kursor.getString(6));
+                rekord.setTresc(kursor.getString(7));
+                rekord.setData(kursor.getString(9));
+                wybrane2.add(rekord);}
+
+        }
+        return wybrane2;
+    }
+
 
 
 
