@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Podsumowaniedzien"
+    tools:context="Sprawdzianyusun"
     android:background="#00CC99">
 
     <TextView
-        android:id="@+id/textdzien"
+        android:id="@+id/textdzienspr"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Wpisz dzień (YYYY-MM-DD)"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.01" />
 
     <EditText
-        android:id="@+id/editDzien"
+        android:id="@+id/editDzienSpr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.06" />
 
     <Button
-        android:id="@+id/wybierzdzien"
+        android:id="@+id/wybierzdzienspr"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
         app:layout_constraintVertical_bias="0.17" />
 
     <TextView
-        android:id="@+id/textpokaz"
+        android:id="@+id/textpokazspr"
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:scrollbars="vertical"
@@ -66,11 +66,11 @@
 
 
     <Button
-        android:id="@+id/usundzien"
+        android:id="@+id/usunspr"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Usuń trening"
+        android:text="Usuń sprawdzian/zawody"
         android:textColor="#000000"
         android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
