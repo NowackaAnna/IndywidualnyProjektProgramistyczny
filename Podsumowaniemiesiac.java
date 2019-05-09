@@ -133,6 +133,7 @@ public class Podsumowaniemiesiac extends AppCompatActivity {
             for (Rekord k : myDb.pokazWybrane2(sprawdzdzien)) {
                 if (k.getSrodek().equals(akcent1)) {
                     kilometryOWB1 = k.getKilometry();
+                    czasOWB1 = k.getCzas();
                     try {
                         int resultOWB1 = Integer.parseInt(kilometryOWB1);
                         kilometryyOWB1 += resultOWB1;
@@ -156,6 +157,7 @@ public class Podsumowaniemiesiac extends AppCompatActivity {
 
                 else if (k.getSrodek().equals(akcent2)) {
                     kilometryOWB2 = k.getKilometry();
+                    czasOWB2 = k.getCzas();
                     try {
                         int resultOWB2 = Integer.parseInt(kilometryOWB2);
                         kilometryyOWB2 += resultOWB2;
@@ -179,6 +181,7 @@ public class Podsumowaniemiesiac extends AppCompatActivity {
 
                 else if (k.getSrodek().equals(akcent3)) {
                     kilometryOWB3 = k.getKilometry();
+                    czasOWB3 = k.getCzas();
                     try {
                         int resultOWB3 = Integer.parseInt(kilometryOWB3);
                         kilometryyOWB3 += resultOWB3;
@@ -199,6 +202,7 @@ public class Podsumowaniemiesiac extends AppCompatActivity {
 
                 else if (k.getSrodek().equals(akcentwt)) {
                     kilometryWT = k.getKilometry();
+                    czasWT = k.getCzas();
                     try {
                         int resultWT = Integer.parseInt(kilometryWT);
                         kilometryyWT += resultWT;
@@ -219,6 +223,7 @@ public class Podsumowaniemiesiac extends AppCompatActivity {
 
                 else if (k.getSrodek().equals(akcentwsz)) {
                     metryWsz = k.getMetry();
+                    czasWsz = k.getCzas();
                     try {
                         int resultWsz = Integer.parseInt(metryWsz);
                         metryyWsz += resultWsz;
@@ -239,6 +244,7 @@ public class Podsumowaniemiesiac extends AppCompatActivity {
 
                 else if (k.getSrodek().equals(akcentzb)) {
                     kilometryZB = k.getKilometry();
+                    czasZB = k.getCzas();
                     try {
                         int resultZB = Integer.parseInt(kilometryZB);
                         kilometryyZB += resultZB;
@@ -259,6 +265,7 @@ public class Podsumowaniemiesiac extends AppCompatActivity {
 
                 else if (k.getSrodek().equals(akcentsz)) {
                     metrySZ = k.getMetry();
+                    czasSZ = k.getCzas();
                     try {
                         int resultSZ = Integer.parseInt(metrySZ);
                         metryySZ += resultSZ;
@@ -279,6 +286,7 @@ public class Podsumowaniemiesiac extends AppCompatActivity {
 
                 else if (k.getSrodek().equals(akcentszt)) {
                     metrySzT = k.getMetry();
+                    czasSzT = k.getCzas();
                     try {
                         int resultSzT = Integer.parseInt(metrySzT);
                         metryySzT += resultSzT;
@@ -299,6 +307,7 @@ public class Podsumowaniemiesiac extends AppCompatActivity {
 
                 else if (k.getSrodek().equals(akcentsb)) {
                     metrySB = k.getMetry();
+                    czasSB = k.getCzas();
                     try {
                         int resultSB = Integer.parseInt(metrySB);
                         metryySB += resultSB;
@@ -319,6 +328,7 @@ public class Podsumowaniemiesiac extends AppCompatActivity {
 
                 else if (k.getSrodek().equals(akcentsila)) {
                     kilogramySila = k.getKilogramy();
+                    czasSila = k.getCzas();
                     try {
                         int resultSila = Integer.parseInt(kilogramySila);
                         kilogramyySila += resultSila;
@@ -339,6 +349,7 @@ public class Podsumowaniemiesiac extends AppCompatActivity {
 
                 else if (k.getSrodek().equals(akcentspr)) {
                     powtorzeniaSpr = k.getPowtorzenia();
+                    czasSpr = k.getCzas();
                     try {
                         int resultSpr = Integer.parseInt(powtorzeniaSpr);
                         powtorzeniaaSpr += resultSpr;
@@ -377,7 +388,7 @@ public class Podsumowaniemiesiac extends AppCompatActivity {
         String czaspokazSpr = Integer.toString(czassSpr);
         int czaslacznie = czassOWB1+czassOWB2+czassOWB3+czassWT+czassWsz+czassZB+czassSZ+czassSzT+czassSB+czassSila+czassSpr;
         String czastreningow = Integer.toString(czaslacznie);
-        textpokazz.setText(textpokazz.getText()+"\nOWB1: "+kilometrypokazOWB1+"\nOWB2: "+kilometrypokazOWB2+"\nOWB3: "+kilometrypokazOWB3+"\nWT: "+kilometrypokazWT+"\nWsz: "+metrypokazWsz+"\nZB: "+kilometrypokazZB+"\nSZ: "+metrypokazSZ+"\nSzT: "+metrypokazSzT+"\nSB: "+metrypokazSB+"\nSiła: "+kilogramypokazSila+"\nSpr: "+powtorzeniapokazSpr+"-"+czaspokazSpr+"min");
+        textpokazz.setText(textpokazz.getText()+"\nOWB1: "+kilometrypokazOWB1+"\nOWB2: "+kilometrypokazOWB2+"\nOWB3: "+kilometrypokazOWB3+"\nWT: "+kilometrypokazWT+"\nWsz: "+metrypokazWsz+"\nZB: "+kilometrypokazZB+"\nSZ: "+metrypokazSZ+"\nSzT: "+metrypokazSzT+"\nSB: "+metrypokazSB+"\nSiła: "+kilogramypokazSila+"\nSpr: "+powtorzeniapokazSpr+"-"+czaspokazSpr+" min"+"\nCałkowity czas treningów: "+czastreningow+" min");
         }
 
 
