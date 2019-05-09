@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aplikacja">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Dziennik Treningowy"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Sprawdzianyusun"></activity>
+        <activity android:name=".Sprawdzianywyswietl" />
+        <activity android:name=".Sprawdzianydodaj" />
+        <activity android:name=".Podsumowaniewszystko" />
+        <activity android:name=".Podsumowaniedzien" />
+        <activity android:name=".Podsumowaniemiesiac" />
+        <activity android:name=".Podsumowanietydzien" />
+        <activity android:name=".Srodekspr" />
+        <activity android:name=".Srodeksila" />
+        <activity android:name=".Srodeksb" />
+        <activity android:name=".Srodekszt" />
+        <activity android:name=".Srodeksz" />
+        <activity android:name=".Srodekzb" />
+        <activity android:name=".Srodekwt" />
+        <activity android:name=".Srodekwsz" />
+        <activity android:name=".Srodekwo3" />
+        <activity android:name=".Srodekwo2" />
+        <activity android:name=".Srodekwo1" />
+        <activity android:name=".Podsumowanie" />
+        <activity android:name=".Sprawdziny" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
