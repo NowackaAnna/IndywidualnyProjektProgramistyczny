@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="Podsumowaniemiesiac"
-    android:background="#00CC99">
+    android:background="#3333FF">
 
     <TextView
         android:id="@+id/textrok"
