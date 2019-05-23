@@ -1,6 +1,7 @@
 package com.example.aplikacja;
 
 import android.database.Cursor;
+import android.graphics.Color;
 import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +15,8 @@ import org.w3c.dom.Text;
 public class Sprawdzianywyswietl extends AppCompatActivity {
     Button pokazwszytskospr;
     TextView textpokazwszytskospr;
+    TextView pasekkolor3;
+    TextView pasekkolor4;
     DatabaseHelperSpr mDb;
 
     @Override
@@ -31,10 +34,18 @@ public class Sprawdzianywyswietl extends AppCompatActivity {
         });
 
         TextView textpokazwszystkospr = (TextView) findViewById(R.id.textpokazwszystkospr);
+        TextView pasekkolor3 = (TextView) findViewById(R.id.pasekkolor3);
+        TextView pasekkolor4 = (TextView) findViewById(R.id.pasekkolor4);
+
     }
 
     public void PokazwszystkoSpr(){
+        TextView pasekkolor3 = (TextView) findViewById(R.id.pasekkolor3);
+        pasekkolor3.setBackgroundColor(Color.parseColor("#FF99FF"));
+        TextView pasekkolor4 = (TextView) findViewById(R.id.pasekkolor4);
+        pasekkolor4.setBackgroundColor(Color.parseColor("#FF99FF"));
         TextView textpokazwszystkospr = (TextView) findViewById(R.id.textpokazwszystkospr);
+        textpokazwszystkospr.setBackgroundColor(Color.parseColor("#FFCCFF"));
         textpokazwszystkospr.setText("");
         textpokazwszystkospr.setMovementMethod(new ScrollingMovementMethod());
         Cursor k = mDb.pokazWszystkieSpr();

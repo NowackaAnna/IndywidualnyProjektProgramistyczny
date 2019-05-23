@@ -20,6 +20,8 @@ import org.w3c.dom.Text;
 public class Podsumowaniewszystko extends AppCompatActivity {
     Button pokazwszytsko;
     TextView textpokazwszytsko;
+    TextView pasekkolor;
+    TextView pasekkolor2;
     DatabaseHelper myDb;
 
     @Override
@@ -37,10 +39,18 @@ public class Podsumowaniewszystko extends AppCompatActivity {
         });
 
         TextView textpokazwszystko = (TextView) findViewById(R.id.textpokazwszystko);
+
+        TextView pasekkolor = (TextView) findViewById(R.id.pasekkolor);
+        TextView pasekkolor2 = (TextView) findViewById(R.id.pasekkolor2);
     }
 
     public void Pokazwszystko(){
+        TextView pasekkolor = (TextView) findViewById(R.id.pasekkolor);
+        pasekkolor.setBackgroundColor(Color.parseColor("#FF99FF"));
+        TextView pasekkolor2 = (TextView) findViewById(R.id.pasekkolor2);
+        pasekkolor2.setBackgroundColor(Color.parseColor("#FF99FF"));
         TextView textpokazwszystko = (TextView) findViewById(R.id.textpokazwszystko);
+        textpokazwszystko.setBackgroundColor(Color.parseColor("#FFCCFF"));
         textpokazwszystko.setText("");
         textpokazwszystko.setMovementMethod(new ScrollingMovementMethod());
         Cursor k = myDb.pokazWszystkie();
