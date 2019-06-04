@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="Sprawdziny"
-    android:background="#00CC99">
+    android:background="#b3c6ff">
 
 
 
@@ -14,46 +14,49 @@
         android:id="@+id/dodajsprzaw"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:text="Dodaj sprawdzian/zawody"
-        android:textColor="#000000"
+        android:textColor="#b3c6ff"
         android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.30" />
+        app:layout_constraintVertical_bias="0.30"
+        android:background="@drawable/button"/>
 
     <Button
         android:id="@+id/sprawdzsprzaw"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:text="Zobacz sprawdziany/zawody"
-        android:textColor="#000000"
+        android:textColor="#b3c6ff"
         android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.50" />
+        app:layout_constraintVertical_bias="0.50"
+        android:background="@drawable/button"/>
 
     <Button
         android:id="@+id/usunsprzaw"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:text="Usuń sprawdzian/zawody"
-        android:textColor="#000000"
+        android:textColor="#b3c6ff"
         android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.70" />
+        app:layout_constraintVertical_bias="0.70"
+        android:background="@drawable/button"/>
 
 
 </android.support.constraint.ConstraintLayout >
