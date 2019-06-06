@@ -142,7 +142,7 @@
         android:layout_width="0dp"
         android:layout_height="35dp"
         android:text="Zapisz dane"
-        android:textColor="#b3c6ff"
+        android:textColor="#d9e2ff"
         android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

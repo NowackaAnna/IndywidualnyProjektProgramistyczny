@@ -5,17 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="Sprawdzianywyswietl"
-    android:background="#CCFFFF">
+    android:background="#b3c6ff">
 
 
     <Button
         android:id="@+id/pokazwszystkospr"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:text="Pokaż wszytskie sprawdziany/zawody"
-        android:textColor="#000000"
+        android:textColor="#d9e2ff"
         android:textColorLink="@color/colorAccent"
+        android:background="@drawable/button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -30,6 +31,8 @@
         android:scrollbars="vertical"
         android:textColor="#000000"
         android:text=""
+        android:textFontWeight="bold"
+        android:fontFamily="sans-serif"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
