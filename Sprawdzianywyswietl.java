@@ -41,11 +41,11 @@ public class Sprawdzianywyswietl extends AppCompatActivity {
 
     public void PokazwszystkoSpr(){
         TextView pasekkolor3 = (TextView) findViewById(R.id.pasekkolor3);
-        pasekkolor3.setBackgroundColor(Color.parseColor("#FF99FF"));
+        pasekkolor3.setBackgroundResource(R.drawable.pasek);
         TextView pasekkolor4 = (TextView) findViewById(R.id.pasekkolor4);
-        pasekkolor4.setBackgroundColor(Color.parseColor("#FF99FF"));
+        pasekkolor4.setBackgroundResource(R.drawable.pasek);
         TextView textpokazwszystkospr = (TextView) findViewById(R.id.textpokazwszystkospr);
-        textpokazwszystkospr.setBackgroundColor(Color.parseColor("#FFCCFF"));
+        textpokazwszystkospr.setBackgroundResource(R.drawable.wszystkopokaz);
         textpokazwszystkospr.setText("");
         textpokazwszystkospr.setMovementMethod(new ScrollingMovementMethod());
         Cursor k = mDb.pokazWszystkieSpr();

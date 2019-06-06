@@ -124,6 +124,7 @@ public class Podsumowaniemiesiac extends AppCompatActivity {
         String pokaz ="";
         TextView textpokazz = (TextView) findViewById(R.id.textpokazz);
         textpokazz.setText("");
+        textpokazz.setBackgroundResource(R.drawable.wszystkopokaz);
         textpokazz.setMovementMethod(new ScrollingMovementMethod());
 
 

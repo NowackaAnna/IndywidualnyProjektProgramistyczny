@@ -53,6 +53,7 @@ public class Sprawdzianyusun extends AppCompatActivity {
         sprawdzspr = editDzienSpr.getText().toString();
         TextView textpokazspr = (TextView) findViewById(R.id.textpokazspr);
         textpokazspr.setText("");
+        textpokazspr.setBackgroundResource(R.drawable.wszystkopokaz);
         textpokazspr.setMovementMethod(new ScrollingMovementMethod());
         for (Sprawdzian k:mDb.pokazWybraneSpr(sprawdzspr)){
             textpokazspr.setText(textpokazspr.getText() + "\nDystans: " + k.getDystans()+ "\nCzas: "+k.getCzas()+"\nDodatkowe informacje: "+k.getDodatkowe_informacje()+"\n");
